@@ -30,6 +30,8 @@ iwconfig
 
 Use the script bash to Enable Monitor Mode if your get some issue after reboot machine
 
+set the run permission:  chmod +x wifiscript.sh
+
 ## Reference
 
 [Hackster.io](https://www.hackster.io/thatiotguy/enable-monitor-mode-in-tp-link-tl-wn722n-v2-v3-128fc6)
