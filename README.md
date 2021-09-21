@@ -2,7 +2,7 @@
 Script bash to Enable Monitor Mode in TP-LINK TL-WN722N V2/V3
 
 ## How Enable
-
+```
 sudo mkdir /opt/driverEthernetUSB
 cd /opt/driverEthernetUSB
 sudo rmmod r8188eu.ko
@@ -14,15 +14,23 @@ exit
 sudo make
 sudo make install
 sudo modprobe 8188eu
+```
 
 ## How use use mode monitor
+```
 iwconfig (to see the dev name) wlan0 in my case
 ifconfig wlan0 down
 airmon-ng check kill
 iwconfig wlan0 mode monitor
 ifconfig wlan0 up
 iwconfig
+```
 
 ## Script
+
 Use the script bash to Enable Monitor Mode if your get some issue after reboot machine
+
+## Reference
+
+[Hackster.io](https://www.hackster.io/thatiotguy/enable-monitor-mode-in-tp-link-tl-wn722n-v2-v3-128fc6)
 
